@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CQR Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>CQR Website</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to CQR Website</h2>
+                <p>Your digital solution partner</p>
+                <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a modern web development company focused on creating beautiful, responsive websites that deliver exceptional user experiences.</p>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Responsive Design</h3>
+                        <p>Our websites work perfectly on all devices</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Modern Technology</h3>
+                        <p>Built with the latest web technologies</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Fast Performance</h3>
+                        <p>Optimized for speed and efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Custom websites and web applications</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful and intuitive user interfaces</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>SEO Optimization</h3>
+                        <p>Improve your search engine rankings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CQR Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
