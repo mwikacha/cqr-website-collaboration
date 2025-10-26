@@ -1,3 +1,4 @@
+//test
 // Mobile menu toggle functionality
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
